@@ -1,3 +1,4 @@
+package Basic;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -6,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class calendar {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver","V:\\Docfile\\chromedriver.exe");
@@ -21,8 +23,8 @@ public class calendar {
 		driver.findElement(By.cssSelector("[class='datepicker-days'] th[class='next']")).click();
 		}
 
-
-		List<WebElement> dates= driver.findElements(By.className("day"));
+		List<WebElement> dates = driver.findElements(By.className("day"));
+		
 		//Grab common attribute//Put into list and iterate
 		int count=driver.findElements(By.className("day")).size();
 
