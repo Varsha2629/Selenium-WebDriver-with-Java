@@ -19,7 +19,7 @@ public class Checkboxcount {
 		driver.findElement(By.xpath("//input[@value='option1']")).click();
 		driver.findElement(By.xpath("//input[@value='option2']")).click();
 		
-		List <WebElement> elements = driver.findElements(By.xpath("//input[@type='checkbox']"));
+		List<WebElement> elements = driver.findElements(By.xpath("//input[@type='checkbox']"));
 		int checkedCount=0;
 		int UncheckedCount=0;
 		for(int i=0;i<elements.size();i++)
