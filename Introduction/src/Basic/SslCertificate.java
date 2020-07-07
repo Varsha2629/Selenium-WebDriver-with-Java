@@ -1,5 +1,4 @@
 package Basic;
-import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -27,6 +26,7 @@ public class SslCertificate {
 		ChromeOptions c= new ChromeOptions();
 		c.merge(ch);
 		System.setProperty("webdriver.chrome.driver", "");
+		@SuppressWarnings("unused")
 		WebDriver driver = new ChromeDriver(c);
 
 	}

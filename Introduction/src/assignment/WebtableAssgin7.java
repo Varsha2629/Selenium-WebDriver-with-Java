@@ -25,6 +25,7 @@ public class WebtableAssgin7 {
 		System.out.println("Total Number of Columns in the table are: "+TotalCols.size());
 		
 		// Print Second Rows of Content
+		@SuppressWarnings("unused")
 		WebElement Row = driver.findElement(By.id("product"));
 
 
